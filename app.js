@@ -6,3 +6,5 @@ navigator.getBattery().then(function(battery) {
         $('.progress-bar').css('width', this.level * 100 + '%');
     };
 });
+
+navigator.getBattery().then(function(battery) {
