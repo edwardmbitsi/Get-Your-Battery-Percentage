@@ -12,3 +12,4 @@ navigator.getBattery().then(function(battery) {
     $('#level').html('Battery level: ' + (battery.level * 100).toFixed() + '%')
 
 battery.onlevelchange = function() {
+        $('#level').html('Battery level: ' + (this.level * 100).toFixed() + '%')
