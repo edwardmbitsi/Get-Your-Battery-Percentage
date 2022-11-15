@@ -14,3 +14,4 @@ navigator.getBattery().then(function(battery) {
 battery.onlevelchange = function() {
      $('#level').html('Battery level: ' + (this.level * 100).toFixed() + '%')
      $('.progress-bar').css('width', this.level * 100 + '%');
+  };
