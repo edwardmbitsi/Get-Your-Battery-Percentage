@@ -29,7 +29,7 @@ battery.addEventListener("chargingchange", () => {
   function updateChargingInfo() {
     if (battery.charging) {
       charge.classList.add("active");
-      chargingTimeRef.innerText = "Charging..";
+      chargingTimeRef.innerText = "Charging...";
     } else {
 charge.classList.remove("active");
 
