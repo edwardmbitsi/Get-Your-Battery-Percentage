@@ -31,3 +31,6 @@ battery.addEventListener("chargingchange", () => {
       charge.classList.add("active");
       chargingTimeRef.innerText = "";
     } else {
+charge.classList.remove("active");
+
+      
