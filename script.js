@@ -20,3 +20,8 @@ updateAllBatteryInfo();
 battery.addEventListener("chargingchange", () => {
     updateAllBatteryInfo();
   });
+
+ //When the Battery Levvel Changes
+  battery.addEventListener("levelchange", () => {
+    updateAllBatteryInfo();
+  }); 
