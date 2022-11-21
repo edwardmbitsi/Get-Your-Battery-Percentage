@@ -25,3 +25,9 @@ battery.addEventListener("chargingchange", () => {
   battery.addEventListener("levelchange", () => {
     updateAllBatteryInfo();
   }); 
+
+  function updateChargingInfo() {
+    if (battery.charging) {
+      charge.classList.add("active");
+      chargingTimeRef.innerText = "";
+    } else {
