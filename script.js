@@ -8,3 +8,9 @@ window.onload = () => {
     return false;
   }
 };
+
+navigator.getBattery().then((battery) => {
+  function updateAllBatteryInfo() {
+    updateChargingInfo();
+    updateLevelInfo();
+  }
