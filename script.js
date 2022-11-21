@@ -33,4 +33,12 @@ battery.addEventListener("chargingchange", () => {
     } else {
 charge.classList.remove("active");
 
+ //Display time left to discharge only when it is a integer value i.e not infinity
+      if (parseInt(battery.dischargingTime)) {
+        let hr = parseInt(battery.dischargingTime / 3600);
+        let min = parseInt(battery.dischargingTime / 60 - hr * 60);
+        chargingTimeRef.innerText = `${hr}hr ${min}mins remaining`;
+      }
+    }
+  }   
       
