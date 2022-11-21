@@ -41,4 +41,12 @@ charge.classList.remove("active");
       }
     }
   }   
+  
+ //Updating battery level
+  function updateLevelInfo() {
+    let batteryLevel = `${parseInt(battery.level * 100)}%`;
+    charge.style.width = batteryLevel;
+    chargeLevel.textContent = batteryLevel;
+  }
+});
       
